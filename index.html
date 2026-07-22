@@ -2,12 +2,1888 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivineCart</title>
+
+    <meta
+        name="description"
+        content="DivineKart - Sacred essentials, pooja samagri and thoughtful treasures for every ritual and celebration."
+    >
+
+    <title>DivineKart | Sacred Things, Thoughtfully Chosen</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Umesh sangulle</h1>
-    <p>this is a E Commarce  website</p>
-    <h2>this is for major  project</h2>
+
+    <!-- =========================================
+         TOP ANNOUNCEMENT BAR
+    ========================================== -->
+
+    <div class="announcement-bar">
+        <p>
+            ✦ Sacred essentials, thoughtfully chosen for you ✦
+        </p>
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">ॐ</span>
+
+                <span class="logo-text">
+                    Divine<span>Kart</span>
+                </span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav">
+
+                <a href="index.html" class="active">Home</a>
+
+                <a href="#shop">Shop</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#occasions">Occasions</a>
+
+                <a href="#community">Community</a>
+
+                <a href="#journal">Journal</a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="header-actions">
+
+                <!-- Search -->
+
+                <button
+                    class="icon-button search-toggle"
+                    aria-label="Open Search"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+
+                <!-- Wishlist -->
+
+                <button
+                    class="icon-button wishlist-header"
+                    aria-label="Wishlist"
+                >
+                    <i class="fa-regular fa-heart"></i>
+
+                    <span class="count-badge wishlist-count">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- Account -->
+
+                <button
+                    class="icon-button"
+                    aria-label="Account"
+                >
+                    <i class="fa-regular fa-user"></i>
+                </button>
+
+
+                <!-- Cart -->
+
+                <button
+                    class="cart-button"
+                    aria-label="Shopping Cart"
+                >
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span>Cart</span>
+
+                    <span class="count-badge cart-count">
+                        0
+                    </span>
+                </button>
+
+
+                <!-- Mobile Menu -->
+
+                <button
+                    class="mobile-menu-button"
+                    aria-label="Open Menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <nav class="mobile-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="#shop">Shop</a>
+
+            <a href="#categories">Categories</a>
+
+            <a href="#occasions">Occasions</a>
+
+            <a href="#community">Community</a>
+
+            <a href="#journal">Journal</a>
+
+            <a href="#footer">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         SEARCH OVERLAY
+    ========================================== -->
+
+    <div class="search-overlay">
+
+        <div class="search-box">
+
+            <button class="close-search">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <p class="search-label">
+                What are you looking for?
+            </p>
+
+            <div class="search-input-wrapper">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search pooja samagri, diyas, incense..."
+                >
+
+                <button id="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <div class="search-suggestions">
+
+                <span>Popular searches:</span>
+
+                <button>Diya</button>
+
+                <button>Pooja Thali</button>
+
+                <button>Incense</button>
+
+                <button>Gift Sets</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <main>
+
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
+
+        <section class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        For every prayer, celebration & moment
+                    </p>
+
+                    <h1>
+                        Some traditions
+                        <em>feel like home.</em>
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Discover thoughtfully chosen pooja essentials
+                        and sacred treasures that make every ritual
+                        feel a little more special.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#shop" class="btn btn-primary">
+                            Explore the collection
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#story" class="text-link">
+                            Our story
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-features">
+
+                        <div class="hero-feature">
+
+                            <span>✦</span>
+
+                            <p>
+                                Made with devotion,
+                                chosen with care.
+                            </p>
+
+                        </div>
+
+                        <div class="hero-feature">
+
+                            <span>🪔</span>
+
+                            <p>
+                                Rooted in Indian traditions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+    <img 
+        src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80"
+        alt="Traditional diya and festive decor"
+    >
+
+    <div class="hero-badge">
+        <span>✦</span>
+        Rooted in Tradition
+    </div>
+</div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             INTRODUCTION
+        ========================================== -->
+
+        <section class="intro-section" id="story">
+
+            <div class="container intro-grid">
+
+                <div class="intro-image">
+
+                    <!-- TEMPORARY REFERENCE IMAGE
+                         Replace this URL later with your own image -->
+
+                    <img
+                        src="https://images.unsplash.com/photo-1604608672516-f1b9f7c8e7c4?auto=format&fit=crop&w=900&q=80"
+                        alt="Traditional Indian diya and flowers"
+                    >
+
+                    <div class="image-label">
+
+                        <span>01</span>
+
+                        <p>
+                            Little moments,
+                            <em>deeply meaningful.</em>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="intro-text">
+
+                    <p class="eyebrow">
+                        Welcome to DivineKart
+                    </p>
+
+                    <h2>
+                        The little things
+                        that make a ritual
+                        <em>feel complete.</em>
+                    </h2>
+
+                    <p>
+                        From the gentle glow of a diya to the fragrance
+                        of incense filling your home, we believe that
+                        every ritual is made beautiful by the little
+                        details.
+                    </p>
+
+                    <p>
+                        DivineKart brings together thoughtfully selected
+                        essentials for your prayers, festivals,
+                        celebrations and everyday moments of devotion.
+                    </p>
+
+                    <a href="#categories" class="text-link">
+                        Discover our collections
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CATEGORY SECTION
+        ========================================== -->
+
+        <section class="categories-section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Explore our collections
+                        </p>
+
+                        <h2>
+                            Find what your ritual needs.
+                        </h2>
+
+                    </div>
+
+                    <p class="section-description">
+                        Everything you need to make your
+                        sacred moments feel complete.
+                    </p>
+
+                </div>
+
+
+                <div class="category-grid">
+
+
+                    <!-- Category 1 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1604608672516-f1b9f7c8e7c4?auto=format&fit=crop&w=700&q=80"
+                                alt="Pooja essentials"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Pooja Samagri</h3>
+
+                            <p>
+                                Everyday essentials
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 2 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80"
+                                alt="Traditional diya lamps"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Diyas & Lamps</h3>
+
+                            <p>
+                                Light up your moments
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 3 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80"
+                                alt="Incense sticks"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Dhoop & Incense</h3>
+
+                            <p>
+                                Fragrance for the soul
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 4 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=700&q=80"
+                                alt="Spiritual idols"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Idols & Murtis</h3>
+
+                            <p>
+                                Sacred companions
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 5 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=700&q=80"
+                                alt="Rudraksha and mala"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Mala & Rudraksha</h3>
+
+                            <p>
+                                Moments of mindfulness
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 6 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=700&q=80"
+                                alt="Flowers and garlands"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Flowers & Mala</h3>
+
+                            <p>
+                                Freshness & devotion
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 7 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=700&q=80"
+                                alt="Havan samagri"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Havan Samagri</h3>
+
+                            <p>
+                                Sacred fire essentials
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 8 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                                alt="Pooja ingredients"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Pooja Ingredients</h3>
+
+                            <p>
+                                Traditional essentials
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 9 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1610448721615-7c1e6f1f5a6b?auto=format&fit=crop&w=700&q=80"
+                                alt="Pooja oils"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Oils & Ghee</h3>
+
+                            <p>
+                                For every sacred flame
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 10 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+                                alt="Pooja gift sets"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Gift Sets</h3>
+
+                            <p>
+                                Thoughtful gifting
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 11 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=700&q=80"
+                                alt="Spiritual accessories"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Spiritual Accessories</h3>
+
+                            <p>
+                                Carry your faith
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Category 12 -->
+
+                    <a href="#shop" class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=700&q=80"
+                                alt="Temple essentials"
+                            >
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <h3>Temple Essentials</h3>
+
+                            <p>
+                                Create your sacred space
+                            </p>
+
+                            <span>
+                                Explore →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FESTIVAL SECTION
+        ========================================== -->
+
+        <section class="occasions-section" id="occasions">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <p class="eyebrow">
+                        Celebrate every moment
+                    </p>
+
+                    <h2>
+                        Festivals & occasions,
+                        <em>made meaningful.</em>
+                    </h2>
+
+                    <p class="section-description">
+                        Find everything you need for the
+                        celebrations that bring us together.
+                    </p>
+
+                </div>
+
+
+                <div class="occasion-grid">
+
+
+                    <a href="#shop" class="occasion-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1604608672516-f1b9f7c8e7c4?auto=format&fit=crop&w=900&q=80"
+                            alt="Diwali celebration"
+                        >
+
+                        <div class="occasion-overlay">
+
+                            <p>Festival of Lights</p>
+
+                            <h3>Diwali</h3>
+
+                            <span>Explore collection →</span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#shop" class="occasion-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=900&q=80"
+                            alt="Ganesh festival"
+                        >
+
+                        <div class="occasion-overlay">
+
+                            <p>Celebrate with devotion</p>
+
+                            <h3>Ganesh Chaturthi</h3>
+
+                            <span>Explore collection →</span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#shop" class="occasion-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80"
+                            alt="Navratri celebration"
+                        >
+
+                        <div class="occasion-overlay">
+
+                            <p>Nine nights of devotion</p>
+
+                            <h3>Navratri</h3>
+
+                            <span>Explore collection →</span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#shop" class="occasion-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=900&q=80"
+                            alt="Pooja celebration"
+                        >
+
+                        <div class="occasion-overlay">
+
+                            <p>For sacred beginnings</p>
+
+                            <h3>Griha Pravesh</h3>
+
+                            <span>Explore collection →</span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="center-button">
+
+                    <a href="#shop" class="btn btn-outline">
+                        Explore all occasions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FEATURED PRODUCTS
+        ========================================== -->
+
+        <section class="products-section" id="shop">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Thoughtfully chosen
+                        </p>
+
+                        <h2>
+                            Beloved essentials.
+                        </h2>
+
+                    </div>
+
+                    <a href="#categories" class="text-link">
+                        View all products →
+                    </a>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-tag">
+                                Bestseller
+                            </span>
+
+                            <button
+                                class="wishlist-button"
+                                aria-label="Add to wishlist"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1604608672516-f1b9f7c8e7c4?auto=format&fit=crop&w=800&q=80"
+                                alt="Traditional pooja thali"
+                            >
+
+                            <button class="quick-view">
+                                Quick view
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Pooja Essentials
+                            </p>
+
+                            <h3>
+                                Traditional Pooja Thali
+                            </h3>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(24)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div>
+
+                                    <span class="price">
+                                        ₹799
+                                    </span>
+
+                                    <span class="old-price">
+                                        ₹999
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Traditional Pooja Thali"
+                                    data-price="799"
+                                >
+                                    Add
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-tag">
+                                New
+                            </span>
+
+                            <button
+                                class="wishlist-button"
+                                aria-label="Add to wishlist"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80"
+                                alt="Brass diya"
+                            >
+
+                            <button class="quick-view">
+                                Quick view
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Diyas & Lamps
+                            </p>
+
+                            <h3>
+                                Handcrafted Brass Diya
+                            </h3>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(18)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div>
+
+                                    <span class="price">
+                                        ₹349
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Handcrafted Brass Diya"
+                                    data-price="349"
+                                >
+                                    Add
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <button
+                                class="wishlist-button"
+                                aria-label="Add to wishlist"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80"
+                                alt="Incense sticks"
+                            >
+
+                            <button class="quick-view">
+                                Quick view
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Dhoop & Incense
+                            </p>
+
+                            <h3>
+                                Sandalwood Incense Collection
+                            </h3>
+
+                            <div class="rating">
+                                ★★★★☆
+                                <span>(32)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div>
+
+                                    <span class="price">
+                                        ₹299
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Sandalwood Incense Collection"
+                                    data-price="299"
+                                >
+                                    Add
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-tag">
+                                Popular
+                            </span>
+
+                            <button
+                                class="wishlist-button"
+                                aria-label="Add to wishlist"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=800&q=80"
+                                alt="Spiritual idol"
+                            >
+
+                            <button class="quick-view">
+                                Quick view
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Idols & Murtis
+                            </p>
+
+                            <h3>
+                                Sacred Ganesha Murti
+                            </h3>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(41)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div>
+
+                                    <span class="price">
+                                        ₹1,299
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Sacred Ganesha Murti"
+                                    data-price="1299"
+                                >
+                                    Add
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             WHY DIVINEKART
+        ========================================== -->
+
+        <section class="why-section">
+
+            <div class="container">
+
+                <div class="why-header">
+
+                    <p class="eyebrow">
+                        Why DivineKart?
+                    </p>
+
+                    <h2>
+                        Thoughtful things
+                        for meaningful moments.
+                    </h2>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+
+                        <span class="why-icon">
+                            ✦
+                        </span>
+
+                        <h3>
+                            Chosen with care
+                        </h3>
+
+                        <p>
+                            Every product is thoughtfully selected
+                            with quality and tradition in mind.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span class="why-icon">
+                            🪔
+                        </span>
+
+                        <h3>
+                            Rooted in tradition
+                        </h3>
+
+                        <p>
+                            We celebrate the rituals and traditions
+                            that bring families together.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span class="why-icon">
+                            ♡
+                        </span>
+
+                        <h3>
+                            Made for your moments
+                        </h3>
+
+                        <p>
+                            From everyday prayers to life's biggest
+                            celebrations, we're here for every moment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             REVIEWS
+        ========================================== -->
+
+        <section class="reviews-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <p class="eyebrow">
+                        Kind words from our community
+                    </p>
+
+                    <h2>
+                        Loved by families
+                        <em>near and far.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="review-grid">
+
+
+                    <article class="review-card">
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+
+                            "The pooja thali arrived beautifully
+                            packed. Everything felt so thoughtfully
+                            put together. It made our Diwali celebration
+                            even more special."
+
+                        </p>
+
+                        <div class="review-author">
+
+                            <div class="author-avatar">
+                                PS
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Priya S.
+                                </strong>
+
+                                <span>
+                                    Verified customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="review-card">
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+
+                            "I loved how easy it was to find everything
+                            I needed for my puja in one place. The
+                            products were beautiful and arrived on time."
+
+                        </p>
+
+                        <div class="review-author">
+
+                            <div class="author-avatar">
+                                AM
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Ananya M.
+                                </strong>
+
+                                <span>
+                                    Verified customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="review-card">
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+
+                            "Beautiful products, lovely packaging and
+                            such a warm experience. DivineKart has
+                            quickly become my favourite place for
+                            festive shopping."
+
+                        </p>
+
+                        <div class="review-author">
+
+                            <div class="author-avatar">
+                                RK
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Riya K.
+                                </strong>
+
+                                <span>
+                                    Verified customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             JOURNAL
+        ========================================== -->
+
+        <section class="journal-section" id="journal">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            From the DivineKart Journal
+                        </p>
+
+                        <h2>
+                            Stories, traditions
+                            & little rituals.
+                        </h2>
+
+                    </div>
+
+                    <a href="#journal" class="text-link">
+                        Visit the journal →
+                    </a>
+
+                </div>
+
+
+                <div class="journal-grid">
+
+
+                    <article class="journal-card">
+
+                        <div class="journal-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1604608672516-f1b9f7c8e7c4?auto=format&fit=crop&w=900&q=80"
+                                alt="Diya tradition"
+                            >
+
+                        </div>
+
+                        <div class="journal-content">
+
+                            <span>
+                                TRADITIONS
+                            </span>
+
+                            <h3>
+                                The beautiful meaning behind
+                                lighting a diya.
+                            </h3>
+
+                            <a href="#journal">
+                                Read the story →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="journal-card">
+
+                        <div class="journal-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=900&q=80"
+                                alt="Indian spiritual tradition"
+                            >
+
+                        </div>
+
+                        <div class="journal-content">
+
+                            <span>
+                                FESTIVALS
+                            </span>
+
+                            <h3>
+                                Creating a meaningful
+                                festive corner at home.
+                            </h3>
+
+                            <a href="#journal">
+                                Read the story →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="journal-card">
+
+                        <div class="journal-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=900&q=80"
+                                alt="Incense and meditation"
+                            >
+
+                        </div>
+
+                        <div class="journal-content">
+
+                            <span>
+                                EVERYDAY RITUALS
+                            </span>
+
+                            <h3>
+                                Little rituals that bring
+                                a sense of calm.
+                            </h3>
+
+                            <a href="#journal">
+                                Read the story →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             COMMUNITY
+        ========================================== -->
+
+        <section class="community-section" id="community">
+
+            <div class="container">
+
+                <div class="community-content">
+
+                    <p class="eyebrow">
+                        Our community
+                    </p>
+
+                    <h2>
+                        Tradition looks
+                        <em>beautiful on you.</em>
+                    </h2>
+
+                    <p>
+                        Share your sacred corners, festive moments
+                        and little rituals with the DivineKart community.
+                    </p>
+
+                    <a href="#community" class="btn btn-primary">
+                        Join the community
+                    </a>
+
+                </div>
+
+
+                <div class="community-gallery">
+
+                    <div class="community-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1604608672516-f1b9f7c8e7c4?auto=format&fit=crop&w=600&q=80"
+                            alt="Community ritual"
+                        >
+
+                    </div>
+
+                    <div class="community-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80"
+                            alt="Diya"
+                        >
+
+                    </div>
+
+                    <div class="community-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=600&q=80"
+                            alt="Spiritual decor"
+                        >
+
+                    </div>
+
+                    <div class="community-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=600&q=80"
+                            alt="Incense"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             NEWSLETTER
+        ========================================== -->
+
+        <section class="newsletter-section">
+
+            <div class="container newsletter-content">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Stay connected
+                    </p>
+
+                    <h2>
+                        A little inspiration,
+                        delivered.
+                    </h2>
+
+                    <p>
+                        Sign up for festive ideas, stories,
+                        new collections and more.
+                    </p>
+
+                </div>
+
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer" id="footer">
+
+        <div class="container footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+
+                    <span class="logo-symbol">ॐ</span>
+
+                    <span class="logo-text">
+                        Divine<span>Kart</span>
+                    </span>
+
+                </a>
+
+                <p>
+                    Sacred things, thoughtfully chosen.
+                    Bringing tradition closer to home.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Shop
+                </h3>
+
+                <a href="#shop">All Products</a>
+
+                <a href="#categories">Pooja Samagri</a>
+
+                <a href="#categories">Diyas & Lamps</a>
+
+                <a href="#categories">Incense</a>
+
+                <a href="#categories">Gift Sets</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#occasions">Occasions</a>
+
+                <a href="#journal">Journal</a>
+
+                <a href="#community">Community</a>
+
+                <a href="#story">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Help
+                </h3>
+
+                <a href="#">Contact Us</a>
+
+                <a href="#">Shipping & Delivery</a>
+
+                <a href="#">Returns</a>
+
+                <a href="#">FAQs</a>
+
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 DivineKart. Made with devotion.
+            </p>
+
+            <p>
+                Sacred things. Thoughtfully chosen.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         CART TOAST
+    ========================================== -->
+
+    <div class="cart-toast">
+
+        <i class="fa-solid fa-check"></i>
+
+        <span>
+            Added to your cart
+        </span>
+
+    </div>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
