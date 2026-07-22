@@ -1,13 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivineCart</title>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>DivineCart | Pooja Essentials</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Umesh sangulle</h1>
-    <p>this is a E Commarce  website</p>
-    <h2>this is for major  project</h2>
+
+  <!-- HEADER -->
+  <header class="main-header">
+
+    <div class="logo-box">
+      <div class="logo-icon">
+        <i class="fa-solid fa-spa"></i>
+      </div>
+
+      <div>
+        <h1>DivineCart</h1>
+        <p>Bring Home the Blessings</p>
+      </div>
+    </div>
+
+    <div class="search-area">
+
+      <select id="categorySelect">
+        <option value="all">All Categories</option>
+        <option value="pooja">Pooja Samagri</option>
+        <option value="idol">Idol & Murti</option>
+        <option value="decor">Decor & Gifts</option>
+        <option value="books">Books & Scriptures</option>
+      </select>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for pooja items, idols, samagri..."
+      >
+
+      <button id="searchButton" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+    </div>
+
+    <div class="header-actions">
+
+      <button class="action-button" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span>Wishlist</span>
+      </button>
+
+      <button class="action-button cart-button" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+        <small id="cartCount">0</small>
+      </button>
+
+      <button class="action-button profile-button" aria-label="Profile">
+        <i class="fa-regular fa-user"></i>
+        <span>Hello, Devotee</span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
+    <button class="mobile-menu-button" id="mobileMenuButton">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul id="navLinks">
+      <li>
+        <a href="#" class="active">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </a>
+      </li>
+
+      <li><a href="#products">Pooja Samagri</a></li>
+      <li><a href="#products">Idol & Murti</a></li>
+      <li><a href="#products">Clothes & Accessories</a></li>
+      <li><a href="#products">Decor & Gifts</a></li>
+      <li><a href="#products">Books & Scriptures</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="festival-offer">
+      <i class="fa-solid fa-crown"></i>
+      Festive Offer: Up to 20% Off
+    </div>
+
+  </nav>
+
+  <!-- MAIN PAGE -->
+  <main class="page-container">
+
+    <div class="content-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+
+        <h2>Shop by Category</h2>
+
+        <ul class="category-list">
+
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                Pooja Samagri
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-gopuram"></i>
+                Idol & Murti
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-shirt"></i>
+                Clothes & Accessories
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-gift"></i>
+                Decor & Gifts
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-book-open"></i>
+                Books & Scriptures
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-smog"></i>
+                Incense & Dhoop
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#products">
+              <span>
+                <i class="fa-solid fa-spa"></i>
+                Festive Specials
+              </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="sale-card">
+          <i class="fa-solid fa-fire"></i>
+
+          <p>Special Festival Sale</p>
+
+          <h3>Up to 20% OFF</h3>
+
+          <span>On selected pooja items</span>
+
+          <a href="#products" class="sale-button">
+            Shop Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <div class="diya-decoration">
+            🪔
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- RIGHT CONTENT -->
+      <section class="main-content">
+
+        <!-- HERO -->
+        <section class="hero">
+
+          <div class="hero-text">
+
+            <p class="hero-small-title">
+              Sacred essentials for every celebration
+            </p>
+
+            <h2>
+              Bring Home
+              <span>Divine Blessings</span>
+            </h2>
+
+            <p class="hero-description">
+              Discover authentic pooja items, beautiful idols,
+              spiritual gifts and festive essentials at one trusted place.
+            </p>
+
+            <div class="hero-buttons">
+
+              <a href="#products" class="primary-button">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a href="#categories" class="secondary-button">
+                View Collections
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-visual">
+
+            <div class="authentic-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+
+              <div>
+                <strong>100% Authentic</strong>
+                <span>Quality Assured</span>
+              </div>
+            </div>
+
+            <div class="hero-circle"></div>
+
+            <img
+              src="images/hero-ganesh.png"
+              alt="Lord Ganesha with pooja essentials"
+              id="heroImage"
+            >
+
+          </div>
+
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+
+          <article class="benefit-item">
+            <i class="fa-solid fa-shield-heart"></i>
+
+            <div>
+              <h3>100% Authentic</h3>
+              <p>Quality Assured</p>
+            </div>
+          </article>
+
+          <article class="benefit-item">
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div>
+              <h3>Fast Delivery</h3>
+              <p>Across India</p>
+            </div>
+          </article>
+
+          <article class="benefit-item">
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <div>
+              <h3>Easy Returns</h3>
+              <p>Hassle Free</p>
+            </div>
+          </article>
+
+          <article class="benefit-item">
+            <i class="fa-solid fa-lock"></i>
+
+            <div>
+              <h3>Secure Payment</h3>
+              <p>100% Safe</p>
+            </div>
+          </article>
+
+          <article class="benefit-item">
+            <i class="fa-regular fa-comments"></i>
+            <div>
+              <h3>Support 24/7</h3>
+              <p>We Are Here</p>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="products-section" id="products">
+
+          <div class="section-heading">
+            <span></span>
+            <h2>Top Picks For You</h2>
+            <span></span>
+          </div>
+
+          <div class="products-grid" id="productsGrid">
+
+            <article
+              class="product-card"
+              data-name="Brass Pooja Thali Set"
+              data-category="pooja"
+            >
+              <div class="product-image-box">
+
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                  src="images/thali.jpg"
+                  alt="Brass Pooja Thali Set"
+                >
+
+              </div>
+
+              <div class="product-info">
+                <h3>Brass Pooja Thali Set</h3>
+
+                <div class="product-bottom">
+                  <strong>₹899</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    4.8
+                  </span>
+                </div>
+
+                <button
+                  class="add-cart-button"
+                  data-product="Brass Pooja Thali Set"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-name="Lord Krishna Idol"
+              data-category="idol"
+            >
+              <div class="product-image-box">
+
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                  src="images/krishna.jpg"
+                  alt="Lord Krishna Idol"
+                >
+
+              </div>
+
+              <div class="product-info">
+                <h3>Lord Krishna Idol</h3>
+
+                <div class="product-bottom">
+                  <strong>₹1,299</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    4.9
+                  </span>
+                </div>
+
+                <button
+                  class="add-cart-button"
+                  data-product="Lord Krishna Idol"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-name="Pooja Samagri Kit"
+              data-category="pooja"
+            >
+              <div class="product-image-box">
+
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                  src="images/pooja-kit.jpg"
+                  alt="Pooja Samagri Kit"
+                >
+
+              </div>
+
+              <div class="product-info">
+                <h3>Pooja Samagri Kit</h3>
+
+                <div class="product-bottom">
+                  <strong>₹599</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    4.7
+                  </span>
+                </div>
+
+                <button
+                  class="add-cart-button"
+                  data-product="Pooja Samagri Kit"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-name="Decorative Diya Set"
+              data-category="decor"
+            >
+              <div class="product-image-box">
+
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                  src="images/diya.jpg"
+                  alt="Decorative Diya Set"
+                >
+
+              </div>
+              <div class="product-info">
+                <h3>Decorative Diya Set</h3>
+
+                <div class="product-bottom">
+                  <strong>₹399</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    4.6
+                  </span>
+                </div>
+
+                <button
+                  class="add-cart-button"
+                  data-product="Decorative Diya Set"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-name="Incense Dhoop Sticks"
+              data-category="pooja"
+            >
+              <div class="product-image-box">
+
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                  src="images/incense.jpg"
+                  alt="Incense Dhoop Sticks"
+                >
+
+              </div>
+
+              <div class="product-info">
+                <h3>Incense Dhoop Sticks</h3>
+
+                <div class="product-bottom">
+                  <strong>₹199</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    4.5
+                  </span>
+                </div>
+
+                <button
+                  class="add-cart-button"
+                  data-product="Incense Dhoop Sticks"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-name="Hanuman Ji Idol"
+              data-category="idol"
+            >
+              <div class="product-image-box">
+
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                  src="images/hanuman.jpg"
+                  alt="Hanuman Ji Idol"
+                >
+
+              </div>
+
+              <div class="product-info">
+                <h3>Hanuman Ji Idol</h3>
+
+                <div class="product-bottom">
+                  <strong>₹1,199</strong>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    4.9
+                  </span>
+                </div>
+
+                <button
+                  class="add-cart-button"
+                  data-product="Hanuman Ji Idol"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+          </div>
+
+          <p id="noResultsMessage" class="no-results">
+            No matching products found.
+          </p>
+
+        </section>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+
+    <div>
+      <p class="section-label">About DivineCart</p>
+
+      <h2>A trusted place for sacred essentials</h2>
+
+      <p>
+        DivineCart is a dedicated ecommerce platform created to make
+        pooja essentials, idols, spiritual décor and ritual items
+        easily accessible in one organized place.
+      </p>
+    </div>
+
+    <div class="about-features">
+      <article>
+        <strong>500+</strong>
+        <span>Spiritual Products</span>
+      </article>
+
+      <article>
+        <strong>50+</strong>
+        <span>Product Categories</span>
+      </article>
+
+      <article>
+        <strong>24/7</strong>
+        <span>Customer Support</span>
+      </article>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <div class="footer-grid">
+
+      <div>
+        <h2>DivineCart</h2>
+
+        <p>
+          Bringing sacred products and divine blessings closer to your home.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+      </div>
+
+      <div>
+        <h3>Customer Service</h3>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          support@divinecart.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +91 98765 43210
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 DivineCart. All rights reserved.
+    </div>
+
+  </footer>
+
+  <!-- TOAST MESSAGE -->
+  <div id="toast" class="toast">
+    Product added to cart
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
